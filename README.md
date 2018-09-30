@@ -1,19 +1,7 @@
-# Etrian Odyssey Skill Simulator
+# DQ XI Skill Simulator
 
-A skill simulator for all EO games.
+A skill simulator for DQ XI.
 
 ## Current Games
 
-* Etrian Odyssey X
-
-## Upcoming Games
-
-* Etrian Odyssey I
-* Etrian Odyssey II
-* Etrian Odyssey III
-* Etrian Odyssey IV
-* Etrian Odyssey Untold
-* Etrian Odyssey II Untold
-* Etrian Mystery Dungeon
-* Etrian Odyssey V
-* Etrian Mystery Dungeon II
+Credit goes to ReinaSakuraba (https://github.com/ReinaSakuraba) whose code I used as a starting point
