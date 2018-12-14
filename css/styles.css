@@ -20,6 +20,11 @@
   --unavailable-midtone: #778898;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .skill-available {
   --highlight: var(--available-highlight);
   --background: var(--available-background);
