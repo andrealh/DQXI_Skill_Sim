@@ -29,6 +29,10 @@
   height: 80vh;
 }
 
+.flex-container>div {
+  width: 30%;
+}
+
 .skill-available {
   --highlight: var(--available-highlight);
   --background: var(--available-background);
