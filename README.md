@@ -14,7 +14,9 @@ Erdrik's symbol: https://gamefaqs.gamespot.com/boards/234547-super-smash-bros-ul
 #### Logos
 
 DQVIII: https://www.gamestop.com/collection/dragon-quest-8
+
 DQIX: https://www.woodus.com/den/games/dq9ds/logos.php
+
 DQXI: unknown
 
 #### Others
