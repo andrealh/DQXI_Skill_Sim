@@ -75,7 +75,7 @@ p {
   justify-content: center;
 }
 
-#header-main div {
+#header-main-column {
   display: flex;
   flex-direction: column;
   margin: 0px 15px 0px 15px;
