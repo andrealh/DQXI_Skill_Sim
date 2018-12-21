@@ -104,7 +104,7 @@ p {
 
 #header-main-column1-content > div {
   margin: 0px 15px 0px 15px;
-  width: 20%
+  width: 20%;
 }
 
 #header-main-column2-title {
@@ -113,7 +113,6 @@ p {
 }
 
 #header-main-column2-content {
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0px 15px 0px 15px;
@@ -121,7 +120,7 @@ p {
 
 #header-main-column2-content > div {
   margin: 0px 15px 0px 15px;
-  width: 20%
+  width: 20%;
 }
 
 #header-links {
