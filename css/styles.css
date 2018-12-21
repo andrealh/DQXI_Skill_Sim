@@ -104,9 +104,10 @@ p {
 }
 
 #info {
-	color: #007FC9;
-	font-size: 16px;
-	margin-right: auto;
+  color: #007FC9;
+  font-size: 16px;
+  margin-right: auto;
+  font-weight: bold;
 }
 
 /**************/
