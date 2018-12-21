@@ -90,14 +90,14 @@ p {
   align-items: center;
 }
 
-#header-main-column1-title {
+#header-main-column1 > #header-main-column1-title {
   display: flex;
   flex-direction: row;
   margin: 0px 15px 0px 15px;
   width: 100%;
 }
 
-#header-main-column1-content {
+#header-main-column1 > #header-main-column1-content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
