@@ -68,14 +68,14 @@ p {
   height: 164px;
 }
 
-#header-main {
+.header-main {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
   justify-content: center;
 }
 
-#header-main-column1 {
+.header-main-column1 {
   display: flex;
   flex-direction: column;
   margin: 0px 15px 0px 15px;
@@ -83,21 +83,21 @@ p {
   align-items: center;
 }
 
-#header-main-column2 {
+.header-main-column2 {
   flex-direction: column;
   margin: 0px 15px 0px 15px;
   width: 50%;
   align-items: center;
 }
 
-#header-main-column1 > #header-main-column1-title {
+.header-main-column1-title {
   display: flex;
   flex-direction: row;
   margin: 0px 15px 0px 15px;
   width: 100%;
 }
 
-#header-main-column1 > #header-main-column1-content {
+.header-main-column1-content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -105,41 +105,41 @@ p {
   margin: 0px 15px 0px 15px;
 }
 
-#header-main-column1-content > div {
+.header-main-column1-content > div {
   display: flex;
   margin: 0px 15px 0px 15px;
   width: 20%;
 }
 
-#header-main-column2-title {
+.header-main-column2-title {
   display: flex;
   flex-direction: row;
   margin: 0px 15px 0px 15px;
 }
 
-#header-main-column2-content {
+.header-main-column2-content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0px 15px 0px 15px;
 }
 
-#header-main-column2-content > div {
+.header-main-column2-content > div {
   display: flex;
   margin: 0px 15px 0px 15px;
   width: 20%;
 }
 
-#header-links {
+.header-links {
   display: flex;
   flex-direction: column;
 }
 
-#header-links a {
+.header-links a {
   flex: 1;
 }
 
-#header-links svg {
+.header-links svg {
   width: 30px;
   fill: var(--available-highlight);
 }
