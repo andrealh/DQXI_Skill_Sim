@@ -18,6 +18,7 @@
   <script type="text/javascript" src="../DQXI_Skill_Sim-test/data/eox/forward.js"></script>
   <script type="text/javascript" src="../DQXI_Skill_Sim-test/data/eox/levels.js"></script>
 </head>
+  
 <body class="blue-theme">
   <div id="header">
     <div>
@@ -29,9 +30,31 @@
     </div>
 
     <div id="header-main">
-      <div>
+      <div id="header-main-column"> <!-- first column -->
+        <strong>Level</strong>
         <div>
-          <strong>Level</strong>
+          <strong>Hero</strong>
+          <select id="level">
+            <option value="0">0</option>
+          </select>
+        </div>
+        
+        <div>
+          <strong>Erik</strong>
+          <select id="level">
+            <option value="0">0</option>
+          </select>
+        </div>
+        
+        <div>
+          <strong>Serena</strong>
+          <select id="level">
+            <option value="0">0</option>
+          </select>
+        </div>
+        
+        <div>
+          <strong>Veronica</strong>
           <select id="level">
             <option value="0">0</option>
           </select>
@@ -40,44 +63,44 @@
         <br>
 
         <div>
-          <strong>Level Cap</strong>
+          <strong>Sylvando</strong>
           <select id="level-cap">
+            <option value="0">0</option>
+          </select>
+        </div>
+        
+        <div>
+          <strong>Jade</strong>
+          <select id="level">
+            <option value="0">0</option>
+          </select>
+        </div>
+        
+        <div>
+          <strong>Rab</strong>
+          <select id="level">
+            <option value="0">0</option>
+          </select>
+        </div>
+        
+        <div>
+          <strong>Eight</strong>
+          <select id="level">
             <option value="0">0</option>
           </select>
         </div>
       </div>
 
-      <div>
+      <div id="header-main-column"> <!-- second column -->
+        <strong>Progression<strong>
         <div>
-          <strong>Retire Level</strong>
+          <strong>Act 1</strong>
           <select id="retire">
             <option value="N/A">N/A</option>
           </select>
         </div>
-      </div>
-
-      <div>
-        <div>
-          <strong>Class</strong>
-          <select id="class-selector-primary">
-            <option value="None">None</option>
-          </select>
-        </div>
-
-        <br>
-
-        <div>
-          <strong>Subclass</strong>
-          <select id="class-selector-secondary">
-            <option value="None">None</option>
-          </select>
-        </div>
-      </div>
-
-      <div>
-        <strong>Points Used<br><p id="points-current"></p>/<p id="points-total"></p></strong>
-      </div>
-    </div>
+      </div> <!-- close div (second column)-->
+    </div> <!-- close div "header-main" -->
 
     <div id="header-links">
       <a href="https://github.com/andrealh/DQXI_Skill_Sim-test" target="_blank">
@@ -92,12 +115,12 @@
           <path d="M248.9,552c0.3,1.8-1.5,3.7-4.2,4.1c-2.6,0.5-5-0.6-5.3-2.4c-0.3-1.8,1.6-3.7,4.2-4.2   C246.2,549.1,248.6,550.1,248.9,552L248.9,552z M248.9,552"/>
         </svg>
       </a>
-    </div>
-  </div>
+    </div> <!-- close div "header-links" -->
+  </div> <!-- close div "header" -->
 
   <div id="main">
     <div class="tree" id="tree-primary"></div>
     <div class="tree" id="tree-secondary"></div>
-  </div>
+  </div> <!-- close div "main" -->
 </body>
 </html>
