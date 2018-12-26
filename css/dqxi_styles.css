@@ -19,7 +19,7 @@
         "character_levels_Sylvando character_levels_Jade character_levels_Rab character_levels_Eight game_progress_event4 game_progress_event5 game_progress_event6";
   
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
 }
 
 .character_levels_title {
