@@ -10,13 +10,13 @@
 /*  Heading   */
 /**************/
 /*Contains the main content of the header*/
-.header_main {
+.header_main_grid {
     display: grid;
   
     grid-template-areas:
-        "character_levels_title character_levels_title game_progress_title game_progress_title"
-        "character_levels_content character_levels_content game_progress_content game_progress_content"
-        "character_levels_content character_levels_content game_progress_content game_progress_content";
+        "character_levels_title character_levels_title character_levels_title character_levels_title game_progress_title game_progress_title character_levels_title game_progress_title game_progress_title"
+        "character_levels_Hero character_levels_Erik character_levels_Veronica character_levels_Serena game_progress_event1 game_progress_event2 game_progress_event3"
+        "character_levels_Sylvando character_levels_Jade character_levels_Rab character_levels_Eight game_progress_event4 game_progress_event5 game_progress_event6";
   
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1.5fr 1fr 1fr;
@@ -26,14 +26,58 @@
     grid-area: character_levels_title;
 }
 
-.character_levels_content {
+.character_levels_Hero {
+    grid-area: character_levels_Hero;
+}
+
+.character_levels_Erik {
+    grid-area: character_levels_Erik;
+}
+
+.character_levels_Veronica {
     grid-area: character_levels_content;
 }
 
-.game_progress_title {
+.character_levels_Serena {
+    grid-area: character_levels_content;
+}
+
+.game_progress_Sylvando {
    grid-area: game_progress_title;
 }
 
-.game_progress_content {
+.character_levels_Jade {
+    grid-area: character_levels_content;
+}
+
+.character_levels_Rab {
+    grid-area: character_levels_content;
+}
+
+.character_levels_Eight {
+    grid-area: character_levels_content;
+}
+
+.game_progress_event1 {
+    grid-area: game_progress_event1;
+}
+
+.game_progress_event2 {
     grid-area: game_progress_content;
+}
+
+.game_progress_event3 {
+    grid-area: game_progress_event3;
+}
+
+.game_progress_event4 {
+    grid-area: game_progress_event4;
+}
+
+.game_progress_event5 {
+    grid-area: game_progress_event5;
+}
+
+.game_progress_event6 {
+    grid-area: game_progress_event6;
 }
