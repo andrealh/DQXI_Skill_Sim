@@ -42,27 +42,27 @@
 }
 
 .character_levels_Veronica {
-    grid-area: character_levels_content;
+    grid-area: character_levels_Veronica;
 }
 
 .character_levels_Serena {
-    grid-area: character_levels_content;
+    grid-area: character_levels_Serena;
 }
 
 .game_progress_Sylvando {
-   grid-area: game_progress_title;
+   grid-area: game_progress_Sylvando;
 }
 
 .character_levels_Jade {
-    grid-area: character_levels_content;
+    grid-area: character_levels_Jade;
 }
 
 .character_levels_Rab {
-    grid-area: character_levels_content;
+    grid-area: character_levels_Rab;
 }
 
 .character_levels_Eight {
-    grid-area: character_levels_content;
+    grid-area: character_levels_Eight;
 }
 
 .game_progress_event1 {
@@ -70,7 +70,7 @@
 }
 
 .game_progress_event2 {
-    grid-area: game_progress_content;
+    grid-area: game_progress_event2;
 }
 
 .game_progress_event3 {
