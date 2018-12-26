@@ -63,6 +63,10 @@ p {
     grid-template-rows: 164px 1fr auto;
     height: 100vh;
     border: 5px solid rgb(0,129,137);
+    
+     /* grid fallback (if grid not supported) */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .header {
