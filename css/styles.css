@@ -1,3 +1,14 @@
+/*
+* styles.css
+* by Andrea Hewko (radiantmemories451)
+*
+* Contains all of the css styling that applies to
+* the home page and the portions of css styling that
+* apply to all of the skill sim pages (mostly general
+* page setup).
+*/
+
+
 /**************/
 /*  General   */
 /**************/
@@ -80,7 +91,7 @@ p {
 /*  Flex Containers  */
 /*********************/
 
-/* General formatting for all flex containers */
+/* General formatting for all flex containers (currently unused, try to put back later)*/
 .flex_container {
     display: flex;
     align-items: center;
@@ -97,17 +108,9 @@ p {
     width: 30%;
 }
 
-
-/**************/
-/*  Heading   */
-/**************/
-.header-main {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  justify-content: center;
-}
-
+/**************************/
+/*  Other Heading Stuff   */
+/**************************/
 .header-links {
   display: flex;
   flex-direction: column;
