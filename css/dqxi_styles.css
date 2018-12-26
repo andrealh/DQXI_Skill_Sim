@@ -23,6 +23,10 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 0.5fr 0.5fr;
     border: 5px solid rgb(214,129,137);
+    
+    /* grid fallback (if grid not supported) */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .header_main_grid > * {
@@ -31,6 +35,7 @@
 
 .character_levels_title {
     grid-area: character_levels_title;
+    grid-column: 1 / -1;
 }
 
 .character_levels_Hero {
@@ -67,6 +72,7 @@
 
 .game_progress_event1 {
     grid-area: game_progress_event1;
+    grid-column: 1 / -1;
 }
 
 .game_progress_event2 {
