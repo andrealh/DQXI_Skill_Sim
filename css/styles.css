@@ -61,7 +61,8 @@ p {
   
     grid-template-columns: 1fr;
     grid-template-rows: 164px 1fr auto;
-    height: 100vh
+    height: 100vh;
+    border: 5px solid rgb(0,129,137);
 }
 
 .header {
@@ -111,7 +112,7 @@ p {
 /**************************/
 /*  Other Heading Stuff   */
 /**************************/
-.header-links {
+header-links {
   display: flex;
   flex-direction: column;
 }
