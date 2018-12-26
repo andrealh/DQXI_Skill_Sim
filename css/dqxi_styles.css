@@ -11,6 +11,8 @@
 /**************/
 /*Contains the main content of the header*/
 .header_main_grid {
+    flex-grow: 1;
+    flex-basis: 100%;
     display: inline-grid;
   
     grid-template-areas:
@@ -20,6 +22,11 @@
   
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 0.5fr 0.5fr;
+    border: 5px solid rgb(214,129,137);
+}
+
+.header_main_grid > * {
+    border: 5px solid rgb(214,129,0);
 }
 
 .character_levels_title {
