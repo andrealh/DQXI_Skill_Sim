@@ -3,75 +3,104 @@
 /**************/
 
 .blue-theme {
-  --body-background: #18515F;
-  --header-background: #002A2B;
+    --body-background: #18515F;
+    --header-background: #002A2B;
 
-  --available-highlight: #A3DAD4;
-  --available-background: #003366;
-  --available-midtone: #226699;
+    --available-highlight: #A3DAD4;
+    --available-background: #003366;
+    --available-midtone: #226699;
 
-  --unavailable-highlight: #A9A9A9;
-  --unavailable-background: #394B61;
-  --unavailable-midtone: #778898;
+    --unavailable-highlight: #A9A9A9;
+    --unavailable-background: #394B61;
+    --unavailable-midtone: #778898;
 }
 
 body {
-  background-color: var(--body-background);
-  font-family: Helvetica, Arial;
-  color: #007FC9;
-  margin: 0px;
-  -webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    background-color: var(--body-background);
+    font-family: Helvetica, Arial;
+    color: #007FC9;
+    margin: 0px;
+    -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
 }
 
 h2 {
-  /* placeholder */
+    /* placeholder */
 }
 
 p {
-  display: inline;
+    display: inline;
 }
 
+/**********************/
+/*  CSS Grid Layouts  */
+/**********************/
+/*Page layout for every skill simulator*/
+.page_grid {
+    display: grid;
+  
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+  
+    grid-template-columns: 1fr;
+    grid-template-rows: 164px 1fr auto;
+    height: 100vh
+}
+
+.header {
+    grid-area: header;
+    background-color: var(--header-background);
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    height: 164px;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+}
+
+.footer {
+    grid-area: footer;
+}
 
 /*********************/
 /*  Flex Containers  */
 /*********************/
 
 /* General formatting for all flex containers */
-.flex-container {
-  display: flex;
-  align-items: center;
+.flex_container {
+    display: flex;
+    align-items: center;
 }
 
 /******* Homepage *******/
-.flex-container logos {
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: 80vh;
+.flex_container logos {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 80vh;
 }
 
 .flex-container logos >div {
-  width: 30%;
+    width: 30%;
 }
 
 
 /**************/
 /*  Heading   */
 /**************/
-
-#header {
-  background-color: var(--header-background);
-  flex-grow: 0;
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-  height: 164px;
-}
-
 .header-main {
   display: flex;
   flex-direction: row;
@@ -91,14 +120,6 @@ p {
 .header-links svg {
   width: 30px;
   fill: var(--available-highlight);
-}
-
-#main {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  height: 600px;
 }
 
 #info {
@@ -197,22 +218,22 @@ td {
 }
 
 .skill-name-en {
-  margin-left: 4px;
-  color: var(--highlight);
-  font-size: 15px;
+    margin-left: 4px;
+    color: var(--highlight);
+    font-size: 15px;
 }
 
 .skill-type {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-  width: calc(var(--node-width) * 0.225);
-  height: calc(var(--node-height) - 4px);
-  margin-right: 2px;
-  border-radius: 100px;
-  background-color: var(--highlight);
-  text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: calc(var(--node-width) * 0.225);
+    height: calc(var(--node-height) - 4px);
+    margin-right: 2px;
+    border-radius: 100px;
+    background-color: var(--highlight);
+    text-align: center;
 }
 
 .skill-type-special {
