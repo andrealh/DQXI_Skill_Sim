@@ -1,59 +1,39 @@
+/*
+* dqxi_styles.css
+* by Andrea Hewko (radiantmemories451)
+*
+* Contains all of the css styling that applies to
+* the DQXI skill simulator.
+*/
+
 /**************/
 /*  Heading   */
 /**************/
-
-
-.flex_container header-main-column1 {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 15px 0px 15px;
-  width: 50%;
-  align-items: center;
+/*Contains the main content of the header*/
+.header_main {
+    display: grid;
+  
+    grid-template-areas:
+        "character_levels_title character_levels_title game_progress_title game_progress_title"
+        "character_levels_content character_levels_content character_levels_content character_levels_content game_progress_content game_progress_content"
+        "character_levels_content character_levels_content character_levels_content character_levels_content game_progress_content game_progress_content";
+  
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr;
 }
 
-.flex_container header-main-column2 {
-  flex-direction: column;
-  margin: 0px 15px 0px 15px;
-  width: 50%;
-  align-items: center;
+.character_levels_title {
+    grid-area: character_levels_title;
 }
 
-.flex_container header-main-column1-title {
-  display: flex;
-  flex-direction: row;
-  margin: 0px 15px 0px 15px;
-  width: 100%;
+.character_levels_content {
+    grid-area: character_levels_content;
 }
 
-.flex_container header-main-column1-content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0px 15px 0px 15px;
+.game_progress_title {
+   grid-area: game_progress_title;
 }
 
-.flex_container header-main-column1-content > div {
-  display: flex;
-  margin: 0px 15px 0px 15px;
-  width: 20%;
-}
-
-.flex_container header-main-column2-title {
-  display: flex;
-  flex-direction: row;
-  margin: 0px 15px 0px 15px;
-}
-
-.flex_container header-main-column2-content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0px 15px 0px 15px;
-}
-
-.flex_container header-main-column2-content > div {
-  display: flex;
-  margin: 0px 15px 0px 15px;
-  width: 20%;
+.game_progress_content {
+    grid-area: game_progress_content;
 }
