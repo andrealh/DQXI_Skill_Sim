@@ -52,21 +52,23 @@ p {
 /**********************/
 /*Page layout for every skill simulator*/
 .page_grid {
+    /* grid fallback (if grid not supported) */
+    display: flex;
+    flex-wrap: wrap;
+    
+    /* if supported */
     display: grid;
   
     grid-template-areas:
         "header"
+        "tabs"
         "main"
         "footer";
   
     grid-template-columns: 1fr;
-    grid-template-rows: 164px 1fr auto;
+    grid-template-rows: 164px auto 1fr auto;
     height: 100vh;
     border: 5px solid rgb(0,129,137);
-    
-     /* grid fallback (if grid not supported) */
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .header {
@@ -77,6 +79,11 @@ p {
     flex-direction: row;
     padding: 10px;
     height: 164px;
+}
+
+.tabs {
+    grid-area: tabs;
+    background: #eee;
 }
 
 .main {
@@ -103,13 +110,15 @@ p {
 }
 
 /******* Homepage *******/
-.flex_container logos {
+.homepage_logos_flex_container {
+    display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
     height: 80vh;
 }
 
-.flex-container logos >div {
+.homepage_logos_flex_container {
     width: 30%;
 }
 
