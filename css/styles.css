@@ -173,7 +173,7 @@ p {
 /**************************/
 /*  Other Heading Stuff   */
 /**************************/
-header-links {
+.header-links {
     display: flex;
     flex-direction: column;
 }
