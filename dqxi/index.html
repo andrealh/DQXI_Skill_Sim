@@ -7,17 +7,17 @@
     <meta property="og:description" content="Create a build for any character in Dragon Quest XI">
     <meta property="og:site_name" content="GitHub">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://andrealh.github.io/DQXI_Skill_Sim-test/dqxi/">
-    <meta property="og:image" content="https://andrealh.github.io/DQXI_Skill_Sim-test/resources/dragon-quest-xi-logo.png">
+    <meta property="og:url" content="https://andrealh.github.io/DQ_Skill_Sim-test/dqxi/">
+    <meta property="og:image" content="../resources/dragon-quest-xi-logo.png">
     <link rel="icon" sizes="48x48" type="image/x-icon" href="../resources/dragon_quest_xi_favicon.ico">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="stylesheet" type="text/css" href="../css/dqxi_styles.css">
-    <script type="text/javascript" src="../DQXI_Skill_Sim-test/js/lz-string.min.js"></script>
-    <script type="text/javascript" src="../DQXI_Skill_Sim-test/js/simulator.js"></script>
-    <script type="text/javascript" src="../DQXI_Skill_Sim-test/js/eoxsimulator.js"></script>
-    <script type="text/javascript" src="../DQXI_Skill_Sim-test/data/eox/skills.js"></script>
-    <script type="text/javascript" src="../DQXI_Skill_Sim-test/data/eox/forward.js"></script>
-    <script type="text/javascript" src="../DQXI_Skill_Sim-test/data/eox/levels.js"></script>
+    <script type="text/javascript" src="../DQ_Skill_Sim-test/js/lz-string.min.js"></script>
+    <script type="text/javascript" src="../DQ_Skill_Sim-test/js/simulator.js"></script>
+    <script type="text/javascript" src="../DQ_Skill_Sim-test/js/eoxsimulator.js"></script>
+    <script type="text/javascript" src="../DQ_Skill_Sim-test/data/eox/skills.js"></script>
+    <script type="text/javascript" src="../DQ_Skill_Sim-test/data/eox/forward.js"></script>
+    <script type="text/javascript" src="../DQ_Skill_Sim-test/data/eox/levels.js"></script>
 </head>
   
 <body class="blue-theme">
@@ -40,11 +40,12 @@
                 <div class="character_levels_Hero">
                     <strong>Hero</strong>
 
+                    <!--
                     <select id="levelDropdown" onchange="changeLevel()">
                     </select>
+                    -->
 
                     <select id="level">
-                        
                         <option value="0">
                             0
                         </option>
@@ -193,122 +194,138 @@
             </div> <!-- close div "header-links" -->
         </div> <!-- close div "header" -->
 
+        <ul class="nav_tabs">
+           <!-- <ul class="nav_tabs"> -->
+                <li>
+                    <a href="#">
+                        <!--
+                        <svg viewBox="0 0 100 100" class="icon">
+                            <use xlink:href="#leaf">
+                        </svg>
+                        -->
+                        <img class="nav_tabs_icons" src="../resources/dragon_quest_xi-hero.png" />
+                        <br>
+                        <div>
+                            Hero
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <!--
+                        <svg viewBox="0 0 100 100" class="icon">
+                            <use xlink:href="#leaf">
+                        </svg>
+                        -->
+                        <img class="nav_tabs_icons" src="../resources/dragon_quest_xi-hero.png" />
+                        <br>
+                        <div>
+                            Erik
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <!--
+                        <svg viewBox="0 0 100 100" class="icon">
+                            <use xlink:href="#leaf">
+                        </svg>
+                        -->
+                        <img class="nav_tabs_icons" src="../resources/dragon_quest_xi-hero.png" />
+                        <br>
+                        <div>
+                            Veronica
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <!--
+                        <svg viewBox="0 0 100 100" class="icon">
+                            <use xlink:href="#leaf">
+                        </svg>
+                        -->
+                        <img class="nav_tabs_icons" src="../resources/dragon_quest_xi-hero.png" />
+                        <br>
+                        <div>
+                            Serena
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <!--
+                        <svg viewBox="0 0 100 100" class="icon">
+                            <use xlink:href="#leaf">
+                        </svg>
+                        -->
+                        <img class="nav_tabs_icons" src="../resources/dragon_quest_xi-hero.png" />
+                        <br>
+                        <div>
+                            Sylvando
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <!--
+                        <svg viewBox="0 0 100 100" class="icon">
+                            <use xlink:href="#leaf">
+                        </svg>
+                        -->
+                        <img class="nav_tabs_icons" src="../resources/dragon_quest_xi-hero.png" />
+                        <br>
+                        <div>
+                            Jade
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <!--
+                        <svg viewBox="0 0 100 100" class="icon">
+                            <use xlink:href="#leaf">
+                        </svg>
+                        -->
+                        <img class="nav_tabs_icons" src="../resources/dragon_quest_xi-hero.png" />
+                        <br>
+                        <div>
+                            Rab
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <!--
+                        <svg viewBox="0 0 100 100" class="icon">
+                            <use xlink:href="#leaf">
+                        </svg>
+                        -->
+                        <img class="nav_tabs_icons" src="../resources/dragon_quest_xi-hero.png" />
+                        <br>
+                        <div>
+                            Eight
+                        </div>
+                    </a>
+                </li>
+           <!-- </ul> -->
+        </ul>
+
         <div class="main">
             <div class="tree" id="tree-primary"></div>
             <div class="tree" id="tree-secondary"></div>
         </div> <!-- close div "main" -->
-
-        <div class="nav_tabs">
-            <ul id="main-nav-list">
-                    <li>
-                        <a href="#">
-                            <!--
-                            <svg viewBox="0 0 100 100" class="icon">
-                                <use xlink:href="#leaf">
-                            </svg>
-                             -->
-                            <div>
-                                Hero
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <!--
-                            <svg viewBox="0 0 100 100" class="icon">
-                                <use xlink:href="#leaf">
-                            </svg>
-                            -->
-                            <div>
-                                Erik
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <!--
-                            <svg viewBox="0 0 100 100" class="icon">
-                                <use xlink:href="#leaf">
-                            </svg>
-                            -->
-                            <div>
-                                Veronica
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <!--
-                            <svg viewBox="0 0 100 100" class="icon">
-                                <use xlink:href="#leaf">
-                            </svg>
-                            -->
-                            <div>
-                                Serena
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <!--
-                            <svg viewBox="0 0 100 100" class="icon">
-                                <use xlink:href="#leaf">
-                            </svg>
-                            -->
-                            <div>
-                                Sylvando
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <!--
-                            <svg viewBox="0 0 100 100" class="icon">
-                                <use xlink:href="#leaf">
-                            </svg>
-                            -->
-                            <div>
-                                Jade
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <!--
-                            <svg viewBox="0 0 100 100" class="icon">
-                                <use xlink:href="#leaf">
-                            </svg>
-                            -->
-                            <div>
-                                Rab
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <!--
-                            <svg viewBox="0 0 100 100" class="icon">
-                                <use xlink:href="#leaf">
-                            </svg>
-                            -->
-                            <div>
-                                Eight
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-        </div>
         
         <div class="footer">
             <p>
-                placeholder
+                footer
             </p>
         </div> <!-- close div "footer" -->
         
