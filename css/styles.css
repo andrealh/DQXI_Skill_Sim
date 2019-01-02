@@ -14,8 +14,9 @@
 /**************/
 
 .blue-theme {
-    --body-background: #18515F;
-    --header-background: #002A2B;
+    --body-background: rgb(44, 105, 155); /*option 1: rgb(37, 113, 175) */ /*option 2: #226699 */
+                                  /*optiion 3: #007FC9 */
+    --header-background: rgb(0, 36, 58); /*option 1: rgb(0, 31, 50) */ /*option 2: rgb(0, 36, 58)*/
 
     --available-highlight: #A3DAD4;
     --available-background: #003366;
@@ -29,7 +30,7 @@
 body {
     background-color: var(--body-background);
     font-family: Helvetica, Arial;
-    color: #007FC9;
+    color: #F2B14D;
     margin: 0px;
     -webkit-touch-callout: none;
         -webkit-user-select: none;
@@ -53,9 +54,7 @@ p {
 /*Page layout for every skill simulator*/
 .page_grid {
     /* grid fallback (if grid not supported) */
-    display: flex;
-    flex-wrap: wrap;
-    
+
     /* if supported */
     display: grid;
   
@@ -66,9 +65,16 @@ p {
         "footer";
   
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.5fr 1fr auto;
+    grid-template-rows: 1fr 0.5fr 4fr 0.5fr;
+    grid-gap: 0px;
     height: 100vh;
 }
+
+/*
+.page_grid > * {
+    border: 3px solid rgb(37, 24, 156);
+}
+*/
 
 .header {
     grid-area: header;
@@ -77,70 +83,32 @@ p {
     display: flex;
     flex-direction: row;
     padding: 10px;
-    height: 17vh;
 }
 
 .nav_tabs {
     grid-area: nav_tabs;
-    height: 4vh;
-}
-
-.nav_tabs ul {
-    margin: 0;
-    padding: 0;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    list-style-image: url("https://andrealh.github.io/DQ_Skill_Sim-test/resources/dragon_quest_xi-hero.png");
-}
-
-.nav_tabs a {
-    padding: 0.5rem 0.5rem;
-    font-size: 1.6rem;
-    width: 100%; /* change later */
-    font-weight: bold;
-    text-decoration: none;
-    display: flex;
-    align-items: flex-start;
-    color: #333;
-    background: rgb(37, 113, 175);
-    border: 1px solid rgb(37, 24, 156);
-}
-
-.nav_tabs a:hover, a:focus{
-    background: #ccc;
-    color: black;
-}
-
-.navtabs span {
-  display: block;
-  font-size: 1rem;
-  font-weight: normal;
-  color: rgb(136, 136, 136);
-  margin: 0.25rem 0 0 0;
-  border: 1px solid #ddd;
-}
-
-.icon {
-    width: 40px;
-    height: 40px;
-    float: left;
-    margin-right: 1rem;
-    fill: #999;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-bottom: 3px solid rgb(37,24,156);
 }
 
 .main {
-  /* grid fallback (if grid not supported) */
-  display: flex;
-  flex-wrap: wrap;
-  
-  /* if supported */
+    /* grid fallback (if grid not supported) */
+    display: flex;
+    flex-wrap: wrap;
+
+    /* if supported */
     grid-area: main;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    height: 70vh; /* change later */
 }
 
 .footer {
@@ -166,7 +134,7 @@ p {
     height: 80vh;
 }
 
-.homepage_logos_flex_container {
+.homepage_logos_flex_container > div {
     width: 30%;
 }
 
@@ -188,10 +156,40 @@ p {
 }
 
 #info {
-    color: #007FC9;
     font-size: 15px;
     margin-right: auto;
     font-weight: bold;
+}
+
+/**************************/
+/*  Other Nav Tab Stuff   */
+/**************************/
+.nav_tabs li {
+    width: 12.3%; /*12.5% */
+    border-top: 1px solid blue;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+    border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 #FFF;
+    height: 100%;
+}
+
+.nav_tabs a {
+    display: flex;
+    border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 0.5;
+    padding: 0.5rem 0rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F2B14D;
+    height: 100%;
 }
 
 /**************/
