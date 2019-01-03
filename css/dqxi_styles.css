@@ -173,24 +173,12 @@
     border-width: 0 1px 1px 0;
 }
 
-.nav_tabs li.selected {
-    color: rgb(37, 24, 156);
-    z-index: 2;
-    border-bottom-color: rgb(44, 105, 155);
-}
 
 .tabrow li.selected:before {
 	box-shadow: 2px 2px 0 #FFF;
 }
 .tabrow li.selected:after {
 	box-shadow: -2px 2px 0 #FFF;
-}
-
-
-
-.nav_tabs a:hover, a:focus{
-    background: rgb(37, 24, 156);
-    color: white;
 }
 
 .nav_tabs_icons {

@@ -90,12 +90,12 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 0;
-    padding: 0;
+    padding: 0.05% 0.03% 0 0.026%;
     list-style: none;
-    border-bottom: 3px solid rgb(37,24,156);
+    border-bottom: 2px solid rgb(37,24,156);
 }
 
 .main {
@@ -166,13 +166,19 @@ p {
 /**************************/
 .nav_tabs li {
     width: 12.3%; /*12.5% */
-    border-top: 1px solid blue;
-    border-left: 1px solid blue;
-    border-right: 1px solid blue;
+    border-top: 1px solid rgb(37,24,156);
+    border-left: 1px solid rgb(37,24,156);
+    border-right: 1px solid rgb(37,24,156);
     border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 #FFF;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4), inset 0 2px 0 rgba(109, 158, 223, 0.39);
     height: 100%;
+}
+
+.nav_tabs li.selected {
+    color: rgb(0, 36, 58);
+    z-index: 2;
+    border-bottom-color: rgb(44, 105, 155);
 }
 
 .nav_tabs a {
@@ -190,6 +196,12 @@ p {
     text-decoration: none;
     color: #F2B14D;
     height: 100%;
+}
+
+.nav_tabs a:hover, a:focus{
+    background: rgb(0, 50, 150);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4), inset 0 2px 0 rgba(109, 158, 223, 0.39);
+    /* color: white; */
 }
 
 /**************/
